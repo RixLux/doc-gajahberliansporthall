@@ -3,10 +3,14 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mermaid from 'astro-mermaid';
 
+// When building for GitHub Pages (CI=true), use the repo name as the base path.
+// Locally, serve from root so the dev server works without any prefix.
+const isCI = process.env.CI === 'true';
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://RixLux.github.io',
-	base: '/doc-gajahberliansporthall',
+	base: isCI ? '/doc-gajahberliansporthall' : '/',
 
 	integrations: [
 		mermaid(),
