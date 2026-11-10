@@ -1,0 +1,20 @@
+{
+  "name": "gajah-berlian-docs",
+  "description": "Developer and deployment documentation portal for Gajah Berlian Sports Hall platform",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.6",
+    "astro": "^7.2.10",
+    "astro-mermaid": "^2.2.0",
+    "mermaid": "^12.3.0",
+    "sharp": "^0.35.3"
+  }
+}

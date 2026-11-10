@@ -1,0 +1,6 @@
+[submodule "FE-Gajah-Berlian-Sport-Hall"]
+	path = FE-Gajah-Berlian-Sport-Hall
+	url = git@github.com:ramjitampan/gajahberliansporthall.git
+[submodule "BE-Gajah-Berlian-Sport-Hall"]
+	path = BE-Gajah-Berlian-Sport-Hall
+	url = git@github.com:RixLux/BE-Gajah-Berlian-Sport-Hall.git

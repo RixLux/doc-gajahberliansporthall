@@ -1,0 +1,44 @@
+---
+title: Gajah Berlian Sports Hall
+description: Official developer and deployment documentation for the Gajah Berlian Sports Hall booking platform.
+template: splash
+hero:
+  tagline: Production-ready developer onboarding, architectural deep dives, and zero-downtime deployment guides for the Gajah Berlian Sports Hall court booking platform.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: 5-Minute Quickstart
+      link: /getting-started/quickstart/
+      icon: right-arrow
+      variant: primary
+    - text: Deployment Guides
+      link: /deployment/overview/
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Explore Documentation
+
+<CardGrid stagger>
+  <Card title="🚀 Fast Local Development" icon="rocket">
+    Get both frontend (React + Vite) and backend (NestJS + PostgreSQL + Redis) up and running locally in under 5 minutes with Docker Compose and seed scripts.
+    [View Quickstart Guide &rarr;](/getting-started/quickstart/)
+  </Card>
+
+  <Card title="🛡️ Roles & Capabilities" icon="approve-check">
+    Understand what **Guest Users**, **Logged-in Customers**, and **Venue Administrators** can do, including permissions, route guards, and cancellation policies.
+    [View Capabilities Matrix &rarr;](/getting-started/roles-capabilities/)
+  </Card>
+
+  <Card title="⚙️ Hexagonal Architecture" icon="puzzle">
+    Dive deep into the backend Clean Architecture (Domain, Application, Infrastructure, Presentation) and how race conditions are prevented with Redis distributed locks.
+    [Explore Backend Architecture &rarr;](/development/backend/)
+  </Card>
+
+  <Card title="📦 Production Deployment" icon="cloud">
+    Step-by-step instructions for deploying the frontend to Vercel and the backend to Docker, VPS, or cloud platforms, plus Midtrans Snap gateway configuration.
+    [Read Deployment Guide &rarr;](/deployment/overview/)
+  </Card>
+</CardGrid>
